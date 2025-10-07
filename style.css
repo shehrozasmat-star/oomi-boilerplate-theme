@@ -1,0 +1,134 @@
+/*
+	Theme Name: NI custom theme
+	Theme URI: https://oomi.co.uk
+	Description: Custom theme for Ni.
+	Author: Oomi Team
+	Author URI: https://oomi.co.uk
+	Version: 1
+	Requires at least: 6.0
+	Requires PHP: 7.4
+*/
+
+/* General Wrapper */
+.tml {
+  max-width: 400px;
+  margin: 60px auto;
+  padding: 30px;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.1);
+  font-family: "Myriad Pro", Sans-serif;
+  font-weight: 400;
+}
+
+/* Heading */
+.tml h2 {
+  text-align: center;
+  font-size: 28px;
+  font-weight: 600;
+  margin-bottom: 20px;
+  color: #333; font-family: "Myriad Pro", Sans-serif;
+
+}
+
+/* Labels */
+.tml label {
+  display: block;
+  font-size: 18px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #444;font-family: "Myriad Pro", Sans-serif;
+}
+
+/* Input Fields */
+.tml input[type="text"],
+.tml input[type="password"],
+.tml input[type="email"] {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px; font-size: 18px !important;
+  margin-bottom: 16px; 
+  transition: border-color 0.3s ease, box-shadow 0.3s ease; font-family: "Myriad Pro", Sans-serif;
+}
+
+.tml input[type="text"]:focus,
+.tml input[type="password"]:focus,
+.tml input[type="email"]:focus {
+  border-color: #0073aa;
+  box-shadow: 0 0 0 3px rgba(0,115,170,0.2);
+  outline: none; font-family: "Myriad Pro", Sans-serif;
+}
+
+/* Login Button */
+.tml input[type="submit"] {
+  width: 100%;
+  padding: 8px 25px;
+  background: #0073aa;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  font-size: 18px !important;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.3s ease; font-family: "Myriad Pro", Sans-serif;
+}
+
+.tml input[type="submit"]:hover {
+  background: #005f87; font-family: "Myriad Pro", Sans-serif; font-size: 18px;
+}
+
+/* Links (Lost Password, Register) */
+.tml .tml-links {
+  text-align: center;
+  margin-top: 15px; font-family: "Myriad Pro", Sans-serif; padding: 0px;
+}
+
+.tml .tml-links a {
+  color: #0073aa;
+  font-size: 18px;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease; font-family: "Myriad Pro", Sans-serif;
+}
+
+.tml .tml-links a:hover {
+  color: #005f87; font-family: "Myriad Pro", Sans-serif;
+}
+
+/* Error / Message Styling */
+.tml .message,
+.tml .error {
+  padding: 10px 15px;
+  margin-bottom: 15px;
+  border-radius: 6px; font-family: "Myriad Pro", Sans-serif;
+  font-size: 18px;
+}
+
+.tml .message {
+  background: #e6f7ff;
+  color: #005f87; font-family: "Myriad Pro", Sans-serif;
+}
+
+.tml .error {
+  background: #ffecec;
+  color: #d8000c; font-family: "Myriad Pro", Sans-serif;
+}
+.tml-button {
+  padding: 10px 50px !important;
+}
+
+.tml-lostpassword-link, .tml-login-link {
+  background-color: var( --e-global-color-primary );
+  font-family: "Myriad Pro", Sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: var( --e-global-color-2a019a8 ) !important;
+  border-style: solid;
+  border-width: 2px 2px 2px 2px;
+  border-color: var( --e-global-color-primary );
+  border-radius: 25px 25px 25px 25px;
+  padding: 10px !important;
+  list-style: none;
+}
+.tml-lostpassword-link a, .tml-login-link a {color: var( --e-global-color-2a019a8 ) !important;}
